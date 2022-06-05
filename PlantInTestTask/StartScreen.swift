@@ -163,9 +163,6 @@ struct TransformationScreen : View {
                             )
                     }
                     .padding(.bottom, 42)
-                    .fullScreenCover(isPresented: $showProfile) {
-                        ContentView()
-                    }
                 }
                 .frame(maxWidth: .infinity)
                 .padding(.horizontal, 20)
