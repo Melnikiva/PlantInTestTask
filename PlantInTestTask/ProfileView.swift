@@ -205,7 +205,7 @@ struct TrendingItem: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             HStack(alignment: .center, spacing: 0) {
-                Image(coin.title)
+                Image(coin.alt)
                     .resizable()
                     .frame(width: 36, height: 36)
                 VStack(alignment: .leading, spacing: 0) {
@@ -220,9 +220,9 @@ struct TrendingItem: View {
                 .padding(.leading, 10)
             }
             .frame(alignment: .leading)
-            if UIImage(named: coin.title + " Curve") != nil
+            if UIImage(named: coin.alt + " curve") != nil
             {
-                Image(coin.title + " Curve")
+                Image(coin.alt + " curve")
                     .resizable(resizingMode: .stretch)
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 164, height: 40)

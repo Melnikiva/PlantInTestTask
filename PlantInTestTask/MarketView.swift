@@ -48,7 +48,7 @@ struct CoinInfoView: View {
     
     var body: some View {
         HStack {
-            Image(coin.title)
+            Image(coin.alt)
                 .frame(width: 46, height: 46)
             VStack(alignment: .leading, spacing: 8, content: {
                 
