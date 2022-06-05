@@ -220,9 +220,9 @@ struct TrendingItem: View {
                 .padding(.leading, 10)
             }
             .frame(alignment: .leading)
-            if UIImage(named: coin.alt + " curve") != nil
+            if UIImage(named: coin.alt + "curve") != nil
             {
-                Image(coin.alt + " curve")
+                Image(coin.alt + "curve")
                     .resizable(resizingMode: .stretch)
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 164, height: 40)
