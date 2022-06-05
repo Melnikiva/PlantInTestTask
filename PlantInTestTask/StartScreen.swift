@@ -34,6 +34,7 @@ struct StartScreen: View {
                             .font(.system(size: 16))
                             .baselineOffset(2)
                             .multilineTextAlignment(.center)
+                            .fixedSize(horizontal: false, vertical: true)
                             .padding(.top, 16)
                             .padding(.bottom, 24)
                         NavigationLink {
@@ -87,6 +88,7 @@ struct SecurityScreen : View {
                         .font(.system(size: 16))
                         .baselineOffset(2)
                         .multilineTextAlignment(.center)
+                        .fixedSize(horizontal: false, vertical: true)
                         .padding(.top, 16)
                         .padding(.bottom, 24)
                     NavigationLink {
@@ -143,6 +145,7 @@ struct TransformationScreen : View {
                         .font(.system(size: 16))
                         .baselineOffset(2)
                         .multilineTextAlignment(.center)
+                        .fixedSize(horizontal: false, vertical: true)
                         .padding(.top, 16)
                         .padding(.bottom, 24)
                     Button {
