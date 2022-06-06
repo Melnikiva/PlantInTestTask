@@ -5,7 +5,6 @@ use_frameworks!
 
 target 'PlantInTestTask' do
 
-  pod 'Nuke', :git => 'https://github.com/kean/Nuke', :branch => 'master'
-  pod 'NukeUI'
+  pod 'Kingfisher', '~> 7.0'
 
 end

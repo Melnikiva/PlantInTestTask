@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import NukeUI
+import Kingfisher
 
 let trending : [Coin] = [
     Coin(title: "Binance Coin", alt: "BNB", change: "0.27%", trend: false, value: "$352,20"),
@@ -47,7 +47,13 @@ struct ProfileView: View {
                         Button {
                             
                         } label: {
-                            LazyImage(source: "https://thispersondoesnotexist.com/image")
+//                            KFImage(URL(string: "https://thispersondoesnotexist.com/image")!)
+//                                .resizable()
+//                                .frame(width: 60, height: 60)
+//                                .scaledToFill()
+//                                .clipShape(Circle())
+                            KFImage.url(URL(string: "https://thispersondoesnotexist.com/image")!, cacheKey: "Profile")
+                                .resizable()
                                 .frame(width: 60, height: 60)
                                 .scaledToFill()
                                 .clipShape(Circle())
