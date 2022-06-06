@@ -16,6 +16,10 @@
 		265D72B0284D33E70033484A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265D72AF284D33E70033484A /* ProfileView.swift */; };
 		265D72B2284D33F10033484A /* MarketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265D72B1284D33F10033484A /* MarketView.swift */; };
 		265D72B4284D34DF0033484A /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265D72B3284D34DF0033484A /* News.swift */; };
+		265D72B6284E15770033484A /* CurrencyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265D72B5284E15770033484A /* CurrencyPageView.swift */; };
+		265D72B8284E5FBA0033484A /* BlankButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265D72B7284E5FBA0033484A /* BlankButton.swift */; };
+		265D72BA284E627B0033484A /* BlankCurrencyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265D72B9284E627B0033484A /* BlankCurrencyButton.swift */; };
+		265D72BC284E78C70033484A /* ExpandableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265D72BB284E78C70033484A /* ExpandableTextView.swift */; };
 		6DC29711E435B79708DDC8AE /* Pods_PlantInTestTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 502611CA3A43F8E0B3EAC464 /* Pods_PlantInTestTask.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +34,10 @@
 		265D72AF284D33E70033484A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		265D72B1284D33F10033484A /* MarketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketView.swift; sourceTree = "<group>"; };
 		265D72B3284D34DF0033484A /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		265D72B5284E15770033484A /* CurrencyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPageView.swift; sourceTree = "<group>"; };
+		265D72B7284E5FBA0033484A /* BlankButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankButton.swift; sourceTree = "<group>"; };
+		265D72B9284E627B0033484A /* BlankCurrencyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankCurrencyButton.swift; sourceTree = "<group>"; };
+		265D72BB284E78C70033484A /* ExpandableTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableTextView.swift; sourceTree = "<group>"; };
 		3AB6CEDBFCDF4657A0054CF3 /* Pods-PlantInTestTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlantInTestTask.debug.xcconfig"; path = "Target Support Files/Pods-PlantInTestTask/Pods-PlantInTestTask.debug.xcconfig"; sourceTree = "<group>"; };
 		47060697179AE796E228F2F1 /* Pods-PlantInTestTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlantInTestTask.release.xcconfig"; path = "Target Support Files/Pods-PlantInTestTask/Pods-PlantInTestTask.release.xcconfig"; sourceTree = "<group>"; };
 		502611CA3A43F8E0B3EAC464 /* Pods_PlantInTestTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlantInTestTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +85,10 @@
 				265D72AF284D33E70033484A /* ProfileView.swift */,
 				265D72B1284D33F10033484A /* MarketView.swift */,
 				265D72B3284D34DF0033484A /* News.swift */,
+				265D72B5284E15770033484A /* CurrencyPageView.swift */,
+				265D72B7284E5FBA0033484A /* BlankButton.swift */,
+				265D72B9284E627B0033484A /* BlankCurrencyButton.swift */,
+				265D72BB284E78C70033484A /* ExpandableTextView.swift */,
 			);
 			path = PlantInTestTask;
 			sourceTree = "<group>";
@@ -103,7 +115,6 @@
 				3AB6CEDBFCDF4657A0054CF3 /* Pods-PlantInTestTask.debug.xcconfig */,
 				47060697179AE796E228F2F1 /* Pods-PlantInTestTask.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -225,9 +236,13 @@
 				264BEBFD284CB6D900C25EA3 /* PlantInTestTaskApp.swift in Sources */,
 				265D72B2284D33F10033484A /* MarketView.swift in Sources */,
 				265D72B0284D33E70033484A /* ProfileView.swift in Sources */,
+				265D72B6284E15770033484A /* CurrencyPageView.swift in Sources */,
+				265D72B8284E5FBA0033484A /* BlankButton.swift in Sources */,
 				265D72B4284D34DF0033484A /* News.swift in Sources */,
 				265D72AE284D33C70033484A /* Coins.swift in Sources */,
 				264BEC0B284CCA0100C25EA3 /* StartScreen.swift in Sources */,
+				265D72BC284E78C70033484A /* ExpandableTextView.swift in Sources */,
+				265D72BA284E627B0033484A /* BlankCurrencyButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

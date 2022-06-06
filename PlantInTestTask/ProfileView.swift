@@ -36,22 +36,17 @@ struct ProfileView: View {
                         VStack(alignment: .leading, spacing: 0, content: {
                             Text("Welcome back, ")
                                 .foregroundColor(Color.gray)
-                                .font(.system(size: 16))
+                                .font(AppFont.commonFont(fontSize: 16))
                             Text("Matthew" + "  👋🏻")
                                 .fontWeight(.semibold)
                                 .foregroundColor(Color.white)
-                                .font(.system(size: 24))
+                                .font(AppFont.commonFont(fontSize: 24))
                                 .padding(.top, 10)
                         })
                         Spacer()
                         Button {
                             
                         } label: {
-//                            KFImage(URL(string: "https://thispersondoesnotexist.com/image")!)
-//                                .resizable()
-//                                .frame(width: 60, height: 60)
-//                                .scaledToFill()
-//                                .clipShape(Circle())
                             KFImage.url(URL(string: "https://thispersondoesnotexist.com/image")!, cacheKey: "Profile")
                                 .resizable()
                                 .frame(width: 60, height: 60)
@@ -76,7 +71,7 @@ struct ProfileView: View {
                         )
                         .overlay(
                             Text("$246.00")
-                                .font(.system(size: 20))
+                                .font(AppFont.commonFont(fontSize: 20))
                                 .fontWeight(.semibold)
                                 .foregroundColor(Color.white)
                         )
@@ -86,43 +81,9 @@ struct ProfileView: View {
                     
                     HStack(alignment: .center, spacing: 10, content: {
                         
-                        Button {
-                            
-                        } label: {
-                            Text("Deposit")
-                                .fontWeight(.semibold)
-                                .foregroundColor(Color.white)
-                                .font(.system(size: 16))
-                                .padding(.vertical, 16)
-                                .frame(maxWidth: .infinity)
-                                .background(
-                                    RoundedRectangle(cornerRadius: 12.0)
-                                        .fill(Color("PrimaryGrey"))
-                                        .overlay(
-                                            RoundedRectangle(cornerRadius: 12)
-                                                .stroke(self.gradient)
-                                        )
-                                )
-                        }
+                        BlankButton(text: "Deposit")
                         
-                        Button {
-                            
-                        } label: {
-                            Text("Withdraw")
-                                .fontWeight(.semibold)
-                                .foregroundColor(Color.white)
-                                .font(.system(size: 16))
-                                .padding(.vertical, 16)
-                                .frame(maxWidth: .infinity)
-                                .background(
-                                    RoundedRectangle(cornerRadius: 12.0)
-                                        .fill(Color("PrimaryGrey"))
-                                        .overlay(
-                                            RoundedRectangle(cornerRadius: 12)
-                                                .stroke(self.gradient)
-                                        )
-                                )
-                        }
+                        BlankButton(text: "Withdraw")
                     }
                     )
                     .padding(.horizontal, 20)
@@ -130,7 +91,7 @@ struct ProfileView: View {
                     Text("🔥  Trending")
                         .fontWeight(.semibold)
                         .foregroundColor(Color.white)
-                        .font(.system(size: 20))
+                        .font(AppFont.commonFont(fontSize: 20))
                         .padding(.top, 42)
                         .padding(.bottom, 22)
                         .padding(.horizontal, 20)
@@ -154,15 +115,14 @@ struct ProfileView: View {
                         Text("🪙  News")
                             .fontWeight(.semibold)
                             .foregroundColor(Color.white)
-                            .font(.system(size: 20))
-                        
+                            .font(AppFont.commonFont(fontSize: 20))
                             .frame(maxWidth: .infinity, alignment: .leading)
                         Spacer()
                         Button {
                             
                         } label: {
                             Text("Show all")
-                                .font(.system(size: 16, weight: .semibold))
+                                .font(AppFont.commonFont(fontSize: 16))
                                 .overlay (
                                     LinearGradient(
                                         colors: [Color("PurpleGradientStart"), Color("PurpleGradientEnd")],
@@ -171,7 +131,7 @@ struct ProfileView: View {
                                     )
                                     .mask(
                                         Text("Show all")
-                                            .font(.system(size: 16, weight: .semibold))
+                                            .font(AppFont.commonFont(fontSize: 16))
                                     )
                                 )
                         }
@@ -218,10 +178,10 @@ struct TrendingItem: View {
                     Text(coin.title)
                         .fontWeight(.semibold)
                         .foregroundColor(Color.white)
-                        .font(.system(size: 16))
+                        .font(AppFont.commonFont(fontSize: 16))
                     Text(coin.alt)
                         .foregroundColor(Color.gray)
-                        .font(.system(size: 12))
+                        .font(AppFont.smallFont(fontSize: 12))
                 }
                 .padding(.leading, 10)
             }
@@ -238,6 +198,7 @@ struct TrendingItem: View {
             else {
                 Text("Missing data")
                     .foregroundColor(Color.gray)
+                    .font(AppFont.commonFont(fontSize: 16))
                     .frame(width: 164, height: 40)
                     .padding(.top, 14)
                     .padding(.bottom, 16)
@@ -248,7 +209,7 @@ struct TrendingItem: View {
                 Text(coin.value)
                     .fontWeight(.semibold)
                     .foregroundColor(Color.white)
-                    .font(.system(size: 14))
+                    .font(AppFont.commonFont(fontSize: 14))
                 Spacer()
                 if coin.trend == false {
                     Image(systemName: "arrowtriangle.down.fill")
@@ -257,7 +218,7 @@ struct TrendingItem: View {
                         .frame(width: 6, height: 4)
                     Text(coin.change)
                         .foregroundColor(Color("PrimaryRed"))
-                        .font(.system(size: 10))
+                        .font(AppFont.smallFont(fontSize: 10))
                 }
                 else {
                     Image(systemName: "arrowtriangle.up.fill")
@@ -266,7 +227,7 @@ struct TrendingItem: View {
                         .frame(width: 6, height: 4)
                     Text(coin.change)
                         .foregroundColor(Color("PrimaryGreen"))
-                        .font(.system(size: 10))
+                        .font(AppFont.smallFont(fontSize: 10))
                 }
                 
             }
@@ -294,18 +255,18 @@ struct NewsView: View {
             VStack (alignment: .leading, spacing: 0, content: {
                 HStack {
                     Text(piece.topic)
-                        .font(.system(size: 12))
+                        .font(AppFont.commonFont(fontSize: 12))
                         .foregroundColor(Color.gray)
                     Circle()
                         .fill(Color.gray)
                         .frame(width: 5, height: 5)
                     Text(piece.age + " ago")
-                        .font(.system(size: 12))
+                        .font(AppFont.commonFont(fontSize: 12))
                         .foregroundColor(Color.gray)
                 }
                 Spacer()
                 Text(piece.title)
-                    .font(.system(size: 14))
+                    .font(AppFont.commonFont(fontSize: 14))
                     .foregroundColor(Color.white)
             })
         }

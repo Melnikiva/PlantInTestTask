@@ -61,3 +61,12 @@ struct MainTabView: View {
         }
     }
 }
+
+struct AppFont {
+    static func commonFont(fontSize: CGFloat) -> Font {
+        return Font.custom("SFProText-Semibold", size: fontSize)
+    }
+    static func smallFont(fontSize: CGFloat) -> Font {
+        return Font.custom("SFProText-Regular", size: fontSize)
+    }
+}
